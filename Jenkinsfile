@@ -5,7 +5,7 @@ pipeline {
                         steps {
                                 sh "ls -la"
                                 sh "echo 'Hastalavista'"
-                                echo "Creating a file..." > file.txt
+                                sh "echo 'Creating a file...' > file.txt"
                         }
                 }
                 stage('Another Stage'){
